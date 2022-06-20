@@ -1,0 +1,9 @@
+{
+    "title": "Philadelphia Housing Authority Real Estate Transactions: 2010-June 2022",
+    "info": "These maps show represent the spatial distribution of all real estate transactions conducted by the Philadelphia Housing Authority (PHA) from 2010 until publication (June of 2022).
+    The PHA is a large provider of public housing in the city of Philadelphia and partially funds itself through buying and selling land at profit. Each map helps to 
+    show where land is being bought and sold across the city over the past decade.", 
+    "coordinates": [-75.167306,39.979308],
+    "author": "Sid Feinberg (sidef1270", 
+    "link": "https://github.com/sidef1270/pha_property_sold/" 
+}
