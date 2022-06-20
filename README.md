@@ -1,11 +1,16 @@
-Land Sold by the Philadelphia Housing Authority from 2010-2022
+Land Transfers and Aquisitions by the Philadelphia Housing Authority from 2010-June 2022
 
 ## DATA SOURCES:
 
 This map was created using the ["Real Estate Transfers"](https://www.opendataphilly.org/dataset/real-estate-transfers) and ["Census Blocks"](https://www.opendataphilly.org/dataset/census-blocks) data sets, both collated by the City of Philadelphia and housed on OpenDataPhilly.
 
-The dataset is available ...
+The datasets are available ...
+
 <!-- Would you make the edited dataset available for others to use? You created a new dataset that consists of points across multiple years, could this be posted as a dataset link? -->
+
+<a href="../pha_grantor_heatmap_3">land sold</a>
+<a href="../grantee_heatmap_2">land aquired</a>
+
  
 
 ## MAP AVAILABILITY:
@@ -22,7 +27,8 @@ I created this map to better understand where the PHA is buying and selling prop
 
 ## MAP-MAKING PROCESS: 
 
-Data for all real estate transfers in the city of Philadelphia is collected in real estate transfer datasets by year in both csv and shapefiles. In order to create this map, I used the census blocks shapefile to create my basemap and downloaded real estate data shapefiles by year from 2010 to the present. Each annual dataset was filtered to only include datapoints which included the PHA as one of or the sole "grantor" or "grantee" of the property to an individual, organization, or agency other than themselves (meaning instances where the PHA sold or transferred property ownership to another entity, or vice versa). Each annual dataset was then merged together to create two collated layers of PHA property sales and purchases from 2010 to the present. In order to represent the spatial distribution of property sales, I formatted these layer as heatmaps in order to represent areas of the city where sales were most concentrated.
+Data for all real estate transfers in the city of Philadelphia is collected in real estate transfer datasets by year in both csv and shapefiles. In order to create this map, I used the census blocks shapefile to create my basemap and downloaded real estate data shapefiles by year from 2010 to the present. Each annual dataset was filtered to only include datapoints which included the PHA as one of or the sole "grantor" or "grantee" of the property to an individual, organization, or agency other than themselves (meaning instances where the PHA sold or transferred property ownership to another entity, or vice versa). Each annual dataset was then merged together to create two collated layers of PHA property sales and purchases from 2010 to the present. In order to represent the spatial distribution of property sales, I formatted these layer as heatmaps in order to represent areas of the city where sales were most concentrated. 
 
 <!-- Were the heatmaps created in QGIS? Were there any particular settings used to generate the heatmap? -->
 
+In order to create a meaningful legend, both maps were created in QGIS using the Kernel Density Estimation prosessing tool, with a radius set to 0.5 miles. The style for both maps was created based on the larger range of the "grantee" dataset and then applied to both maps in order to create a uniform measure of density across both datasets. 
