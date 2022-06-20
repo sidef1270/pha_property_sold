@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
     <style>
-        <style>
+        
     body {
       margin: 0;
       padding: 0;
@@ -66,7 +66,8 @@
 
     #map {
       width: 100%;
-      margin: 0px auto;
+      margin-top: 15px;
+      margin-left: 30px;
 
     }
 
@@ -87,30 +88,34 @@
       padding-top: 20px;
     }
 
+    .resolution-link {
+      margin-left: 30px;
+    }
+
     
   </style>
 </head>
 <body>
-    <h1></h1> 
-    <h1></h1>
+
 	<div id='map'>
 		<!-- Add your custom HTML here -->
-		<img src="../pha_property_sold/pha_lowres.png">
+		<img src="pha_lowres.png">
 	</div>
-	<a href="../pha_property_sold/pha_highres.png">Link to high resolution version</a>
+	<a href="pha_highres.png" class="resolution-link">Link to high resolution version</a>
 	<section>
         <h2>Authored by: Sid Feinberg </h2>
 		<p>Data source: <a href="https://www.opendataphilly.org/" target="blank">OpenDataPhilly: </a>
-            <a href: https://www.opendataphilly.org/dataset/real-estate-transfers target="blank">Real Estate Transfers</a>,
-            <a href: https://www.opendataphilly.org/dataset/census-blocks target="blank"> Census Blocks</a>
+            <a href="https://www.opendataphilly.org/dataset/real-estate-transfers" target="_blank">Real Estate Transfers</a>,
+            <a href="https://www.opendataphilly.org/dataset/census-blocks" target="_blank"> Census Blocks</a>
 		<br><br>
         These maps represent the approximately 6,000 real estate transactions conducted by the Philadelphia Housing Authority between 2010 and the present (June 2022). 
         The map to the right represents the spatial distribution of property sold or transfered away from the PHA while the map to the left represents new property aquisitions during the same time period.
+        <br><br>
         To create these maps, real estate transaction point layers, by year, were filtered to data points representing transactions by the PHA, collated into two layers representing aquisitions and transfers, and 
         represented as heat maps to show their respective spatial distributions in the city of Philadelphia. The map helps to represent where the PHA is buying and selling land, which
         may help us better understand the PHA's financial model and its potential ramifications. 
         <br><br>
-        <a href: https://github.com/sidef1270/pha_property_sold/blob/779df131ac97d39099904f5587205da090c2b546/README.md target="blank">README</a>
+        More information about the datasets and process used to create these maps is available in the repository's <a href="https://github.com/sidef1270/pha_property_sold" target="_blank">README file</a>.
     </p>
 
 		<ul>
